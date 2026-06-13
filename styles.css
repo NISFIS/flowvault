@@ -183,6 +183,7 @@ body {
   flex-direction: column;
   gap: 10px;
 }
+.form-fields[hidden] { display: none; }
 
 .waitlist-form input[type="email"] {
   width: 100%;
