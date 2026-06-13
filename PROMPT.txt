@@ -1,0 +1,76 @@
+PROJEKTI: FlowVault fake door -validointi (landing page + sisältöpaketti)
+
+KONTEKSTI:
+FlowVault on tuleva mobiiliappi räppäreille ja lauluntekijöille. Tagline: 
+"Stack your bars in the Vault". Ongelma jonka se ratkaisee: barit ja 
+lyriikat hukkuvat puhelimen muistiinpanoihin, voice memoihin ja 
+WhatsApp-vedoksiin — ei yhtä paikkaa, jossa flowt, punchlinet ja 
+keskeneräiset biisit pysyvät järjestyksessä. Appia EI ole vielä koodattu. 
+Tämän projektin tarkoitus on validoida kysyntä ennen kehitystä.
+
+Brändi: tumma, street/studio-henkinen. Pohjavärit: lähes musta tausta 
+(#0A0A0C tyyliin), korostusväri kulta/keltainen tai neon. Typografia: 
+moderni groteski (esim. Space Grotesk tms. Google Fonts). Tunnelma: 
+"vault" = holvi, arvokas sisältö lukkojen takana. Ei korporaatio-SaaS-
+ilmettä — tämän pitää näyttää siltä, että artisti teki sen artisteille.
+
+TEHTÄVÄ 1 — LANDING PAGE:
+Rakenna yksisivuinen staattinen landing page (pelkkä index.html + CSS, 
+ei frameworkkeja, ei build-steppiä) joka voidaan julkaista GitHub 
+Pagesiin sellaisenaan.
+
+Sisältö ja rakenne:
+1. Hero: iso otsikko "Stack your bars in the Vault", alaotsikko joka 
+   kiteyttää ongelman yhdellä lauseella, email-kenttä + CTA-nappi 
+   "Get early access" (tai parempi jos keksit)
+2. Ongelma-osio: 3 kipupistettä (barit hukassa notes-äpissä, voice 
+   memot kaaoksessa, ideat unohtuvat keikkareissussa) — lyhyet, 
+   relatable, ei korporaatiokieltä
+3. Ratkaisu-osio: 3 ydinominaisuutta lyhyesti (esim. bars-kirjasto 
+   tageilla, voice memo -> teksti, flow-luonnokset projekteittain). 
+   Merkitse selvästi "coming soon" -henki, älä lupaa valmista tuotetta
+4. Toinen email-CTA sivun lopussa
+5. Footer: minimaalinen
+
+Email-keräys: käytä Formspree-integraatiota (form action -> 
+https://formspree.io/f/PLACEHOLDER_ID) ja laita koodiin selkeä 
+kommentti mihin oikea ID vaihdetaan. Lisää myös fallback-ohje 
+README:hen: miten Formspree free tier otetaan käyttöön (ilmainen, 
+50 submissionia/kk riittää testiin).
+
+Tekninen:
+- Mobile first (95% liikenteestä tulee TikTokista puhelimella)
+- Nopea: ei ulkoisia kirjastoja paitsi Google Fonts
+- Open Graph -tagit valmiiksi (otsikko, kuvaus, og:image placeholder)
+- Yksinkertainen success-tila lomakkeelle (kiitossivu tai inline-viesti)
+
+TEHTÄVÄ 2 — TIKTOK/SHORTS-SKRIPTIT:
+Luo tiedosto scripts.md jossa on 15 lyhytvideokäsikirjoitusta (15-30s), 
+kuvattavissa pelkällä puhelimella ilman editointitaitoja. Kieli: 
+englanti (kansainvälinen yleisö), mutta merkitse 3 niistä myös 
+suomenkielisinä versioina.
+
+Jokaisessa skriptissä:
+- Hook (ensimmäiset 1-2 sekuntia, teksti ruudulla + mitä sanotaan)
+- Runko (mitä näytetään/sanotaan, max 4 beatia)
+- CTA (ohjaus bioon/linkkiin, vaihtele muotoa ettei toistu)
+- Formaatti-idea (esim. POV, skit, screen recording, talking head)
+
+Jakauma:
+- 6 kpl relatable pain point -huumoria (esim. "POV: etsit sitä yhtä 
+  baria 400 muistiinpanon seasta")
+- 5 kpl "building in public" -kulmaa (rakennan appia räppäreille, 
+  tässä miksi)
+- 4 kpl arvosisältöä (vinkkejä lyriikoiden organisointiin/kirjoittamiseen)
+
+TEHTÄVÄ 3 — JULKAISUSUUNNITELMA:
+Luo plan.md: 14 päivän postausaikataulu (1 video/päivä, mikä skripti 
+minäkin päivänä ja miksi siinä järjestyksessä), onnistumiskriteerit 
+(mitä lukuja seurataan: sivun kävijät, email-konversio%, video views), 
+ja selkeä go/no-go-raja: millä luvuilla 14 päivän jälkeen kannattaa 
+jatkaa kehitykseen ja millä luvuilla tappaa idea tai pivotoida.
+
+LOPUKSI:
+Luo README.md jossa on vaiheittainen deploy-ohje GitHub Pagesiin 
+(git init -> repo -> Settings -> Pages) ja Formspree-setup. Oleta että 
+osaan käyttää gitiä mutta en ole tehnyt GitHub Pages -julkaisua ennen.

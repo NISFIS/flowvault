@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FlowVault — Stack your bars in the Vault</title>
+  <meta name="description" content="One app to find beats, write on them while they play, and train your delivery. FlowVault is coming to iOS — get early access.">
+  <meta name="theme-color" content="#0A0A0C">
+
+  <!-- ══════════════════════════════════════════════════════════════════
+       OPEN GRAPH / SOME-JAKOTAGIT
+       ▼ VAIHDA: korvaa USERNAME ja REPO omilla GitHub-tiedoillasi
+         julkaisun jälkeen (ks. README.md, vaihe 5).
+       ══════════════════════════════════════════════════════════════════ -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="FlowVault — Stack your bars in the Vault">
+  <meta property="og:description" content="One app to find beats, write on them while they play, and train your delivery. Coming to iOS — get early access.">
+  <meta property="og:url" content="https://nisfis.github.io/flowvault/">
+  <meta property="og:image" content="https://nisfis.github.io/flowvault/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="FlowVault — Stack your bars in the Vault">
+  <meta name="twitter:description" content="Beats, bars and practice in one app. Coming to iOS — get early access.">
+  <meta name="twitter:image" content="https://nisfis.github.io/flowvault/assets/og-image.png">
+
+  <!-- Fontit: ainoa ulkoinen riippuvuus (Google Fonts) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='4' y='14' width='5' height='14' rx='1' fill='%23F2C14E'/%3E%3Crect x='13' y='6' width='5' height='22' rx='1' fill='%23F2C14E'/%3E%3Crect x='22' y='10' width='5' height='18' rx='1' fill='%23F2C14E'/%3E%3C/svg%3E">
+
+  <!-- ══════════════════════════════════════════════════════════════════
+       (VALINNAINEN MUTTA SUOSITELTU) KÄVIJÄSEURANTA — GoatCounter
+       Ilman tätä et tiedä sivun kävijämäärää, eikä go/no-go-laskenta
+       (plan.md) onnistu. Käyttöönotto: ks. README.md, vaihe 6.
+       Poista kommentit ja vaihda OMA-KOODI omaksi GoatCounter-koodiksesi.
+
+  <script data-goatcounter="https://OMA-KOODI.goatcounter.com/count"
+          async src="//gc.zgo.at/count.js"></script>
+       ══════════════════════════════════════════════════════════════════ -->
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <span class="wordmark">Flow<span class="wordmark-accent">Vault</span></span>
+    <span class="header-chip">Early access</span>
+  </header>
+
+  <main id="main">
+
+    <!-- ════════════════════ 1. HERO ════════════════════ -->
+    <section class="hero">
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <div class="eq" aria-hidden="true">
+            <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+          </div>
+          <h1>Stack your bars<br>in the <span class="gold">Vault.</span></h1>
+          <p class="hero-sub">
+            Right now your beats live on YouTube, your bars live in Notes,
+            and the vibe dies somewhere in between.
+          </p>
+          <p class="hero-sub-small">
+            FlowVault puts beats, writing and practice in one app. iOS first — in the works.
+          </p>
+
+          <!-- ════════════════════════════════════════════════════════
+               EMAIL-LOMAKE #1 (hero)
+               ▼ VAIHDA: korvaa PLACEHOLDER_ID omalla Formspree-ID:lläsi
+                 (8 merkkiä, esim. "mqkvabcd"). Sama ID kahteen lomakkeeseen
+                 — toinen on sivun lopussa. Ohje: README.md, vaihe 3.
+               ════════════════════════════════════════════════════════ -->
+          <form class="waitlist-form" data-waitlist
+                action="https://formspree.io/f/PLACEHOLDER_ID" method="POST">
+            <div class="form-fields">
+              <label class="visually-hidden" for="email-hero">Email address</label>
+              <input id="email-hero" type="email" name="email" required
+                     placeholder="your@email.com" autocomplete="email" inputmode="email">
+              <button type="submit">Lock in my spot</button>
+            </div>
+            <input type="hidden" name="placement" value="hero">
+            <input type="hidden" name="_subject" value="New FlowVault waitlist signup">
+            <input type="text" name="_gotcha" class="gotcha" tabindex="-1" aria-hidden="true">
+            <p class="form-status" role="status" aria-live="polite"></p>
+            <p class="form-micro">Free early access · one email when the Vault opens · no spam, ever.</p>
+          </form>
+        </div>
+
+        <!-- Konsepti-mockup: pelkkää CSS:ää, ei kuvia -->
+        <figure class="phone-wrap">
+          <div class="phone" aria-hidden="true">
+            <div class="phone-screen">
+              <div class="player">
+                <div class="player-head">
+                  <div>
+                    <p class="beat-title">Midnight Haze</p>
+                    <p class="beat-meta">prod. KOVA</p>
+                  </div>
+                  <p class="beat-stats">142 BPM · A min</p>
+                </div>
+                <div class="chips">
+                  <span class="chip">Intro</span>
+                  <span class="chip chip-active">Hook</span>
+                  <span class="chip">Verse 1</span>
+                  <span class="chip">Verse 2</span>
+                </div>
+                <div class="player-controls">
+                  <span class="play-btn">▶</span>
+                  <span class="progress"><span class="progress-fill"></span></span>
+                </div>
+              </div>
+              <div class="drag-handle"></div>
+              <div class="lyrics">
+                <p class="lyric dim">city lights blur when I'm locked in the booth</p>
+                <p class="lyric dim">every word in the vault like proof</p>
+                <p class="lyric active">stack my bars 'til the ceiling move</p>
+                <p class="lyric faint">midnight haze but the pen stay smooth</p>
+                <p class="lyric faint">…</p>
+                <div class="editor-foot">
+                  <span class="saved-chip">Saved ✓</span>
+                  <span class="word-count">142 words</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <figcaption class="phone-caption">Concept preview — UI not final</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ════════════════════ 2. ONGELMA ════════════════════ -->
+    <section class="problems">
+      <h2>Where the vibe dies</h2>
+      <div class="card-grid">
+        <article class="card">
+          <span class="card-num">01</span>
+          <h3>The hunt kills the flow</h3>
+          <p>Forty minutes deep in type-beat playlists. Two ads per beat. By the time you find one, the idea you opened the app with is gone.</p>
+        </article>
+        <article class="card">
+          <span class="card-num">02</span>
+          <h3>Two apps, zero flow</h3>
+          <p>Beat in one app, bars in another. You switch to write — the beat stops. Switch back — lose your line. By round three the energy's dead.</p>
+        </article>
+        <article class="card">
+          <span class="card-num">03</span>
+          <h3>Your bars are everywhere</h3>
+          <p>Half a hook in Notes, a punchline in a voice memo, your best verse in a chat with yourself. Good luck finding any of it next session.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ════════════════════ 3. RATKAISU ════════════════════ -->
+    <section class="solution">
+      <div class="solution-head">
+        <h2>One app. Zero friction.</h2>
+        <span class="soon-badge">In the works — iOS first</span>
+      </div>
+      <div class="card-grid">
+        <article class="card card-feature">
+          <span class="card-num">01</span>
+          <h3>A beat feed that respects the vibe</h3>
+          <p>Swipe through beats like a feed — BPM, key and genre right on the card. One tap saves it to your Vault. No ads mid-search, no ten-minute intros.</p>
+        </article>
+        <article class="card card-feature">
+          <span class="card-num">02</span>
+          <h3>Write while it plays</h3>
+          <p>Beat on top, your lyrics below — on one screen. The beat keeps playing while you write, even when you lock your phone. Jump straight to the hook with one tap.</p>
+        </article>
+        <article class="card card-feature">
+          <span class="card-num">03</span>
+          <h3>Training Mode</h3>
+          <p>Your lyrics scroll to the beat's BPM like a teleprompter. Loop the section, tighten the pocket, run it back until the delivery sits right.</p>
+        </article>
+      </div>
+      <p class="honesty">
+        Real talk: FlowVault isn't out yet. We're building it right now —
+        early access members get the first keys and a say in what ships first.
+      </p>
+    </section>
+
+    <!-- ════════════════════ 4. CTA #2 ════════════════════ -->
+    <section class="cta-bottom">
+      <h2>Be first in the Vault</h2>
+      <p>Early access is free and limited. Drop your email — you'll get one message when the doors open, and that's it.</p>
+
+      <!-- ▼ VAIHDA: sama Formspree-ID kuin hero-lomakkeessa (README.md, vaihe 3) -->
+      <form class="waitlist-form" data-waitlist
+            action="https://formspree.io/f/PLACEHOLDER_ID" method="POST">
+        <div class="form-fields">
+          <label class="visually-hidden" for="email-bottom">Email address</label>
+          <input id="email-bottom" type="email" name="email" required
+                 placeholder="your@email.com" autocomplete="email" inputmode="email">
+          <button type="submit">Put me on the list</button>
+        </div>
+        <input type="hidden" name="placement" value="footer">
+        <input type="hidden" name="_subject" value="New FlowVault waitlist signup">
+        <input type="text" name="_gotcha" class="gotcha" tabindex="-1" aria-hidden="true">
+        <p class="form-status" role="status" aria-live="polite"></p>
+      </form>
+
+      <p class="roadmap-note">
+        On the roadmap: license the beats you write on, straight from the producer —
+        transparent prices, no checkout surprises.
+      </p>
+    </section>
+  </main>
+
+  <!-- ════════════════════ 5. FOOTER ════════════════════ -->
+  <footer class="site-footer">
+    <span class="wordmark wordmark-small">Flow<span class="wordmark-accent">Vault</span></span>
+    <p>Built by writers, for writers.</p>
+    <p class="footer-fine">© 2026 FlowVault · <a href="mailto:hello@flowvault.app">hello@flowvault.app</a></p>
+  </footer>
+
+  <script>
+    // Lomakkeen inline-success ilman sivulatausta. Ilman JavaScriptiä lomake
+    // toimii silti: Formspree näyttää oman kiitossivunsa.
+    document.querySelectorAll('form[data-waitlist]').forEach(function (form) {
+      form.addEventListener('submit', async function (e) {
+        e.preventDefault();
+        var status = form.querySelector('.form-status');
+        var btn = form.querySelector('button[type="submit"]');
+        var originalLabel = btn.textContent;
+
+        // Suojakaide: muistuttaa omistajaa jos Formspree-ID on vielä asettamatta.
+        if (form.action.indexOf('PLACEHOLDER_ID') !== -1) {
+          status.textContent = 'Form isn’t connected yet — add your Formspree ID (see README).';
+          status.className = 'form-status error';
+          return;
+        }
+
+        btn.disabled = true;
+        btn.textContent = 'Locking in…';
+        try {
+          var res = await fetch(form.action, {
+            method: 'POST',
+            body: new FormData(form),
+            headers: { 'Accept': 'application/json' }
+          });
+          if (res.ok) {
+            form.querySelector('.form-fields').hidden = true;
+            status.textContent = 'You’re on the list. One email when the Vault opens — that’s it. 🔑';
+            status.className = 'form-status success';
+          } else {
+            status.textContent = 'Something broke — give it another shot in a sec.';
+            status.className = 'form-status error';
+          }
+        } catch (err) {
+          status.textContent = 'Network hiccup — check your connection and try again.';
+          status.className = 'form-status error';
+        } finally {
+          btn.disabled = false;
+          btn.textContent = originalLabel;
+        }
+      });
+    });
+  </script>
+</body>
+</html>
